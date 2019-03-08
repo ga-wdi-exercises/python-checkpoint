@@ -27,6 +27,9 @@
 #     "name": "Unidentified Flying Object",
 # }
 
+class Vehicle:
+    def __init__(self, dict)
+
 
 
 # #2: Create a Motorcycle class that inherits from the Vehicle class and has the
