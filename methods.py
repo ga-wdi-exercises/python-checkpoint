@@ -57,6 +57,13 @@ def has_ruby_exp():
         }
     }
 
+    for i in experience:
+        if experience[i]['ruby'] == True:
+            ruby_experience.append(i)
+    return sorted(ruby_experience)
+
+
+has_ruby_exp()
 
 # #3: Create a method called toggle_str_num that takes an argument. If the
 # argument is a string, convert it to an integer and return the integer; If the
