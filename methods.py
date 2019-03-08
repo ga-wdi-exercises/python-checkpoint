@@ -67,12 +67,12 @@ def has_ruby_exp():
 # argument is neither a string nor an integer, return the string "this is not a
 # str or a int":
 
-def toggle_str_num(userInput):
-    if isinstance(userInput, str):
-        return int(userInput)
-    elif isinstance(userInput, int):
-        return str(userInput)
+def toggle_str_num(argument):
+    if type(argument) == str:
+        return int(argument)
+    elif type(argument) == int:
+        return str(argument)
     else:
         return "this is not a str or a int"
-
+# toggle_str_num(3)
 # Commit when you finish working on these questions!
