@@ -9,6 +9,8 @@
 def num_list_with_arg(num):
     return list(range(1, num))
 
+# ! Shorten - one line.
+
 
 # #2: Modify the has_ruby_exp method below so that it returns a SORTED list of
 # all instructors who have Ruby experience (i.e. where "ruby" == True)
@@ -58,7 +60,6 @@ def has_ruby_exp():
     return sorted(ruby_experience)
 
 has_ruby_exp()
-
 
 # #3: Create a method called toggle_str_num that takes an argument. If the
 # argument is a string, convert it to an integer and return the integer; If the
