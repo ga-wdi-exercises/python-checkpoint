@@ -22,4 +22,4 @@ num_list = [1, 2, 3, 4]
 
 teacher_list = ["zakk", "jimmy", "hammad", "erin"]
 
-# Commit when you finish working on these questions!
+# Commit when you finish working on these questions
