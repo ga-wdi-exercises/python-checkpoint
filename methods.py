@@ -70,7 +70,6 @@ def has_ruby_exp():
 # If the argument is neither a string nor an integer, return the string "this is not a str or a int":
 
 def toggle_str_num(v):
-    # if v is 
     if type(v) is str:
         return int(v)
     elif type(v) is int:
