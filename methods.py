@@ -18,20 +18,20 @@ def has_ruby_exp():
     ruby_experience = []
 
     experience = {
-        'jimmy': {
-            'bjj': False,
-            'soccer': False,
-            'ruby': True,
-            'baking': True,
-            'biking': True,
-            'pasta': False
-        },
         'don': {
             'bjj': False,
             'soccer': False,
             'ruby': True,
             'baking': True,
             'biking': False,
+            'pasta': False
+        },
+        'jimmy': {
+            'bjj': False,
+            'soccer': False,
+            'ruby': True,
+            'baking': True,
+            'biking': True,
             'pasta': False
         },
         'zakk': {
@@ -52,9 +52,11 @@ def has_ruby_exp():
         }
     }
 
-    for prop in experience:
-        if experience[prop]['ruby'] == True:
-            ruby_experience.append(prop)
+    for instructor in experience:
+        if experience[instructor]['ruby'] == True:
+            ruby_experience.append(instructor)
+    
+    return ruby_experience
         # else:
             # return False
 
