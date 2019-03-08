@@ -65,11 +65,12 @@ def has_ruby_exp():
         if key['ruby'] == True:
             # for instructor in experience:
                 # print(instructor)
-            unsorted_ruby.append(instructor)
+            # unsorted_ruby.append(instructor)
+            ruby_experience.append(instructor)
         # print(unsorted_ruby)
-    ruby_experience = sorted(unsorted_ruby)
+    # ruby_experience = sorted(unsorted_ruby)
     # print(ruby_experience)
-    return(ruby_experience)
+    return(sorted(ruby_experience))
 
     
 print(has_ruby_exp())
