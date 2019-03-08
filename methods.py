@@ -58,6 +58,13 @@ def has_ruby_exp():
         }
     }
 
+    for teacher in experience.items():
+        if teacher[1]["ruby"] == True:
+            ruby_experience.append(teacher[0])
+
+    return(sorted(ruby_experience))
+
+has_ruby_exp()
 
 
 # #3: Create a method called toggle_str_num that takes an argument. If the
@@ -66,6 +73,13 @@ def has_ruby_exp():
 # argument is neither a string nor an integer, return the string "this is not a
 # str or a int":
 
+def toggle_str_num(arg):
+    if type(arg) == str:
+        return int(arg)
+    elif type(arg) == int:
+        return str(arg)
+    else:
+        return "this is not a str or a int"
 
 
 # Commit when you finish working on these questions!
