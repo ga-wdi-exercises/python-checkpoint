@@ -28,8 +28,20 @@
 # }
 
 class Vehicle:
-    def __init__(self, dict)
+    def __init__(self, dict):
+        self.vehicle_type = dict['vehicle_type']
+        self.wheel_count = dict['wheel_count']
+        self.name = dict['name']
+        self.mpg = dict['mpg']
 
+    def get_vehicle_type(self):
+        return self.vehicle_type
+
+    def get_vehicle_drive(self):
+        if self.wheel_count == 'no wheels!':
+            return "no wheels send it back to the shop"
+        else:
+            return(f"I have {self.wheel_count} wheel drive")
 
 
 # #2: Create a Motorcycle class that inherits from the Vehicle class and has the
@@ -38,17 +50,38 @@ class Vehicle:
 # - method: `pop_wheelie` if `wheel_count` is not equal to 2 then it should return False
 #       otherwise return "popped a wheelie!"
 
+class Motorcycle(Vehicle):
+    def __init__(self, wheel_count):
+        super().__init__(wheel_count)
 
+    def pop_wheelie(self):
+        if (self.wheel_count != 2):
+            return False
+        else:
+            return("popped a wheelie!")    
 
 # #3: Define a Car class that inherits from the Vehicle class with the following properties and methods:
 # - all the properties inherited from the Vehicle class
 # - property: `wheel_count` defaults to 4
 # - method: `can_drive` that should return 'Vrrooooom Vroooom'
 
+class Car(Vehicle):
+    def __init__(self, wheel_count = 4):
+        super().__init__(wheel_count)
+
+    def can_drive(self):
+        return('Vrrooooom Vroooom')
 
 # #4: Define a Truck class that inherits from the Vehicle class with the following properties and methods:
 # - all the properties inherited from the Vehicle class
 # - method: `rev_engine` that should return a string 'rreevv!'
+
+class Truck(Vehicle):
+    def __init__(self, wheel_count):
+        super().__init__(wheel_count)
+
+    def rev_engine(self):
+        return('rreevv!')
 
 
 # Commit when you finish working on these questions!
