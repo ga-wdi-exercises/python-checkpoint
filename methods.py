@@ -73,3 +73,12 @@ has_ruby_exp()
 
 
 # Commit when you finish working on these questions!
+def toggle_str_num(arg):
+    if type(arg) == str:
+        retInt = int(arg)
+        return retInt
+    elif type(arg) == int:
+        retStr = str(arg)
+        return retStr
+    else:
+        return('this is not a str or a int')
