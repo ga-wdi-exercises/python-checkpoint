@@ -57,14 +57,6 @@ def has_ruby_exp():
             ruby_experience.append(instructor)
     
     return ruby_experience
-        # else:
-            # return False
-
-        # test says it's not returning the correct thing, but it is?!!! says expected E       AssertionError: the method has_ruby_exp did not return the expected result
-# E       assert None == ['don', 'jimmy', 'zakk'] but it is????
-        
-
-
 
 # #3: Create a method called toggle_str_num that takes an argument.
 # If the argument is a string, convert it to an integer and return the integer;
