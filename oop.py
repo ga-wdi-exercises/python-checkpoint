@@ -27,6 +27,26 @@
 #     "name": "Unidentified Flying Object",
 # }
 
+class Vehicle:
+    def __init__(self, dict):
+        self.vehicle_type = dict['vehicle_type']
+        self.wheel_count = dict['wheel_count']
+        self.name = dict['name']
+        self.mpg = dict['mpg']
+
+    def get_vehicle_type(self):
+        return self.vehicle_type
+
+    def get_vehicle_brand(self):
+        return self.vehicle_brand
+
+    def get_vehicle_drive(self):
+        if self.wheel_count == 'no wheels!':
+            return "no wheels send it back to the shop"
+        else:
+            return "I have {} wheel drive".format(self.wheel_count)
+
+
 
 
 # #2: Create a Motorcycle class that inherits from the Vehicle class and has the
@@ -34,6 +54,15 @@
 # - all the properties inherited from the Vehicle class
 # - method: `pop_wheelie` if `wheel_count` is not equal to 2 then it should return False
 #       otherwise return "popped a wheelie!"
+class Motorcycle(Vehicle):
+    def __init__(self, dict):
+        super().__init__(dict)
+
+    def pop_wheelie(self):
+        if wheel_count != 2:
+            return False
+        else:
+            return 'popped a wheelie!'
 
 
 
