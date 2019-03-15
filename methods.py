@@ -7,6 +7,17 @@
 # So if the number 5 is passed in, num_list_with_arg should return [1, 2, 3, 4]
 
 
+def num_list_with_arg(num):
+    nums = range(1, num)
+    # print(nums)
+    num_list = []
+    for numbers in nums:
+        num_list.append(numbers)
+
+    return num_list
+
+num_list_with_arg(1)
+
 # #2: Modify the has_ruby_exp method below so that it returns a SORTED list of
 # all instructors who have Ruby experience (i.e. where "ruby" == True)
 # The list should contain only names of instructors.
@@ -50,6 +61,26 @@ def has_ruby_exp():
         }
     }
 
+ def has_ruby_exp():
+            'pasta': False
+        }
+    }
+    unsorted_ruby = []
+    for instructor, key in experience.items():
+        # print(key['ruby'])
+        if key['ruby'] == True:
+            # for instructor in experience:
+                # print(instructor)
+            unsorted_ruby.append(instructor)
+        # print(unsorted_ruby)
+    ruby_experience = sorted(unsorted_ruby)
+    # print(ruby_experience)
+    return(ruby_experience)
+
+
+print(has_ruby_exp())
+
+ def has_ruby_exp():
 
 
 # #3: Create a method called toggle_str_num that takes an argument. If the
@@ -60,4 +91,15 @@ def has_ruby_exp():
 
 
 
+def toggle_str_num(arg):
+    if type(arg) == str:
+        converted_arg = int(arg)
+        return converted_arg
+    elif type(arg) == int:
+        converted_arg = str(arg)
+        return converted_arg
+    else:
+        return "this is not a str or a int"
+
+print(toggle_str_num(True))
 # Commit when you finish working on these questions!
