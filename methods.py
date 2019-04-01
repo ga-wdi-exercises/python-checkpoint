@@ -50,6 +50,15 @@ def has_ruby_exp():
         }
     }
 
+    # for teacher in experience:
+    #     if experience[teacher].get('ruby')
+    #         ruby_experience.append(experience[teacher])
+    # return ruby_experience
+
+def num_list_with_arg(upper_bound):
+    my_range = list(range(1, upper_bound))
+    return my_range
+
 
 
 # #3: Create a method called toggle_str_num that takes an argument. If the
@@ -58,6 +67,21 @@ def has_ruby_exp():
 # argument is neither a string nor an integer, return the string "this is not a
 # str or a int":
 
+# def toggle_str_num(my_arg):
+#     if isinstance(my_arg, str):
+#         return int(my_arg)
+#     if isinstance(my_arg, int):
+#         return str(my_arg)
+#     else:
+#         return "this is not a str or a int"
+
+def toggle_str_num(my_arg):
+    if type(my_arg) is str:
+        return int(my_arg)
+    if type(my_arg) is int:
+        return str(my_arg)
+    else:
+        return "this is not a str or a int"
 
 
 # Commit when you finish working on these questions!
