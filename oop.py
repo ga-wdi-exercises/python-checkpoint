@@ -67,16 +67,14 @@ class Motorcycle(Vehicle):
 # - all the properties inherited from the Vehicle class
 # - property: `wheel_count` defaults to 4
 # - method: `can_drive` that should return 'Vrrooooom Vroooom'
-class Motorcycle(Vehicle):
+class Car(Vehicle):
 
     def __init__(self, vehicle_type, wheel_count, mpg, name):
-        super().__init__(vehicle_type, wheel_count, mpg, name)
+        super().__init__(vehicle_type, wheel_count=4, mpg, name)
 
-    def pop_wheelie():
-        if self.wheel_count != 2:
-            return False
-        else:
-            return "popped a wheelie!"
+    def can_drive():
+        return 'Vrrooooom Vroooom'
+
 
 # #4: Define a Truck class that inherits from the Vehicle class with the following properties and methods:
 # - all the properties inherited from the Vehicle class
