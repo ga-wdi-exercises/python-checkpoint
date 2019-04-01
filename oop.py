@@ -32,7 +32,7 @@ class Vehicle:
         self.vehicle_type = vehicle_type
         self.wheel_count = wheel_count
         self.name = name
-        self.mpg = (city, highway, combined)
+        self.mpg = {city, highway, combined}
         
         
     def get_vehicle_type(self):
@@ -51,11 +51,11 @@ class Vehicle:
 #       otherwise return "popped a wheelie!"
 
 class Motorcycle(Vehicle):
-    def __init__(self, wheel_count, name):
+    def __init__(self, wheel_count):
         self.vehicle_type = vehicle_type
         self.wheel_count = wheel_count
         self.name = name
-        self.mpg = (city, highway, combined)
+        self.mpg = {city, highway, combined}
 
     def pop_wheelie(self):
         if self.wheel_count != 2:
