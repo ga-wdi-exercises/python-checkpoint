@@ -17,7 +17,7 @@
 # Here's an example of the dict that will be passed in to your class:
 #
 # vehicle_dict_vehicle = {
-#     "vehicle_type": "Vehicle",
+#     "vehicle_type": `"Vehicle",
 #     "wheel_count": 'no wheels!',
 #     "mpg": {
 #         "city": 19,

@@ -11,8 +11,8 @@ import data_types
 # VARIABLES TESTS
 instructor_list = ['zakk', 'jimmy', 'hammad', 'erin']
 
-def test_dictionary_classroom():
-    assert data_types.dictionary_classroom == {
+def test_dictionary_classroom(self):
+    assert Data_types.dictionary_classroom == {
         "chairs": 35,
         "name": 'CR3',
         "windows_count": 8,
@@ -29,7 +29,7 @@ def test_dict_classroom_windows_count():
     assert data_types.dictionary_classroom["windows_count"] == 8, 'the window count is not 8'
 
 def test_dict_classroom_glare():
-    assert data_types.dictionary_classroom["glare"] == True, 'the glare property is not true'
+    assert data_types.dictionary_classroom["glare"] == False, 'the glare property is not true'
 
 def test_num_list():
     assert data_types.num_list == [1, 2, 3, 4], 'list is not correct'
