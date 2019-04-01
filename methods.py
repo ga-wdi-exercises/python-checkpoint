@@ -6,6 +6,12 @@
 #
 # So if the number 5 is passed in, num_list_with_arg should return [1, 2, 3, 4]
 
+def num_list_with_arg():
+    int_input = int(input())
+    if (int_input < 0):
+        return False
+    else:
+        range(1, int_input)
 
 # #2: Modify the has_ruby_exp method below so that it returns a SORTED list of
 # all instructors who have Ruby experience (i.e. where "ruby" == True)
