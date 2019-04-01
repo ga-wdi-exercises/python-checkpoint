@@ -1,3 +1,6 @@
+# Note: couldn't get past the conflict of python versions... 3.6 vs 3.7??? Tried to update per slack msg, but didn't have any luck.
+
+
 # #1: Create a dictionary called "dictionary_classroom" with the following
 # properties and values:
 #     - "chairs" -> data_type: int, value: 35
