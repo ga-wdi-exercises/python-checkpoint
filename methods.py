@@ -60,11 +60,12 @@ def has_ruby_exp():
 
 
 # Need a loop
-# Access ruby property some how...
-    for i in experience:
-        if experience[i]['ruby'] == True:
+# Access ruby property somehow to append the index...
+# Why experience is undefined
+for i in experience:
+    if experience[i]['ruby'] == True:
         ruby_experience.append(i)
-        return ruby_experience
+    return ruby_experience
 
 
 # #3: Create a method called toggle_str_num that takes an argument. If the
