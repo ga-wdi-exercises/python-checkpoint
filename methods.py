@@ -3,14 +3,21 @@
 
 # #1: Create a method called num_list_with_arg that takes a positive integer and
 # returns a list of integers between 1 and the number passed in.
-#
+
 # So if the number 5 is passed in, num_list_with_arg should return [1, 2, 3, 4]
 
+
+def num_list_with_arg(number):
+    return (list(range(1, number)))
+
+
+print(num_list_with_arg(5))
 
 # #2: Modify the has_ruby_exp method below so that it returns a SORTED list of
 # all instructors who have Ruby experience (i.e. where "ruby" == True)
 # The list should contain only names of instructors.
 # make sure you name the list ruby_experience before returning it.
+
 
 def has_ruby_exp():
     ruby_experience = []
@@ -48,8 +55,16 @@ def has_ruby_exp():
             'biking': True,
             'pasta': False
         }
+
     }
 
+
+# Need a loop
+# Access ruby property some how...
+    for i in experience:
+        if experience[i]['ruby'] == True:
+        ruby_experience.append(i)
+        return ruby_experience
 
 
 # #3: Create a method called toggle_str_num that takes an argument. If the
@@ -58,6 +73,18 @@ def has_ruby_exp():
 # argument is neither a string nor an integer, return the string "this is not a
 # str or a int":
 
+def toggle_str_num(argument):
+    if type(argument) == str:
+        return int(argument)
+    elif type(argument) == int:
+        return str(argument)
+    else:
+        return("this is not a str or a int")
+
+
+print(toggle_str_num("5"))
+print(toggle_str_num(5))
+print(toggle_str_num(False))
 
 
 # Commit when you finish working on these questions!
