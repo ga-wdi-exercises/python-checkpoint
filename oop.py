@@ -13,7 +13,7 @@
 #
 # Your Vehicle class should take one extra argument in the __init__ method (a `dict`) with the above
 # attributes. Define the properties on the class from the dict that is passed in.
-# 
+#
 # Here's an example of the dict that will be passed in to your class:
 #
 # vehicle_dict_vehicle = {
@@ -28,24 +28,80 @@
 # }
 
 
+class Vehicle:
+    def __init__(self, name, wheel_count):
+        self.name = name,
+        self.vehicle_type = "vehicle_type",
+        self.wheel_count = int,
+        self.dict = {
+            "city": 19,
+            "highway": 30,
+            "combined": 27
+        }
+
+
+def get_vehicle_type(Vehicle):
+    return "vehicle_type"
+
 
 # #2: Create a Motorcycle class that inherits from the Vehicle class and has the
 # following properties and methods:
 # - all the properties inherited from the Vehicle class
 # - method: `pop_wheelie` if `wheel_count` is not equal to 2 then it should return False
 #       otherwise return "popped a wheelie!"
+class Motorcycle(Vehicle):
+    def __init__(self, name):
+        self.vehicle_type = Motorcycle
+        self.wheel_count: 2
+        mpg: {
+            "city": 46,
+            "highway": 70,
+            "combined": 67
+        }
+        self.name = "Motorcylce"
 
-
-
+    def pop_wheelie(Motorcycle):
+        if Vehicle.wheel_count != 2:
+            return False
+        else:
+            "popped a wheelie!"
 # #3: Define a Car class that inherits from the Vehicle class with the following properties and methods:
 # - all the properties inherited from the Vehicle class
 # - property: `wheel_count` defaults to 4
 # - method: `can_drive` that should return 'Vrrooooom Vroooom'
 
 
+class Car(Vehicle):
+    def __init__(self, name):
+        self.vehicle_type: "Car"
+        self.wheel_count = 4
+        self.mpg: {
+            "city": 46,
+            "highway": 70,
+            "combined": 67
+        }
+        self.name = "Car"
+
+    def can_drive(Car):
+        return "Vrrooooom Vroooom"
+
 # #4: Define a Truck class that inherits from the Vehicle class with the following properties and methods:
 # - all the properties inherited from the Vehicle class
 # - method: `rev_engine` that should return a string 'rreevv!'
 
+
+class Truck(Vehicle):
+    def __init__(self, name):
+        self.vehicle_type = 'truck'
+        mpg: {
+            "city": 46,
+            "highway": 70,
+            "combined": 67
+        }
+        self.name = "Truck"
+        self.wheel_count = 4
+
+    def rev_engine(Truck):
+        return "rreevv!"
 
 # Commit when you finish working on these questions!
