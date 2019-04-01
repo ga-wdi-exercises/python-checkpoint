@@ -7,6 +7,9 @@
 # So if the number 5 is passed in, num_list_with_arg should return [1, 2, 3, 4]
 
 
+"num_list_with_arg"
+
+
 # #2: Modify the has_ruby_exp method below so that it returns a SORTED list of
 # all instructors who have Ruby experience (i.e. where "ruby" == True)
 # The list should contain only names of instructors.
@@ -50,7 +53,8 @@ def has_ruby_exp():
         }
     }
 
-
+for key in sorted(experience):
+    print "%s: %s" % (key, mydict[key])
 
 # #3: Create a method called toggle_str_num that takes an argument. If the
 # argument is a string, convert it to an integer and return the integer; If the
