@@ -27,7 +27,22 @@
 #     "name": "Unidentified Flying Object",
 # }
 
+class Vehicle:
+    def __init__(self, vehicle_type, wheel_count, mpg, name):
+        self.vehicle_type = vehicle_type
+        self.wheel_count = wheel_count
+        self.name = name
+        self.mpg = (city, highway, combined)
+        
+        
+    def get_vehicle_type(self):
+        print(self.vehicle_type)
 
+    def get_vehicle_drive(self):
+        if self.wheel_count == "no wheels!":
+            print("no wheels send it back to the shop")
+        else:
+            print(f"I have {self.wheel_count} wheel drive")
 
 # #2: Create a Motorcycle class that inherits from the Vehicle class and has the
 # following properties and methods:
@@ -35,7 +50,18 @@
 # - method: `pop_wheelie` if `wheel_count` is not equal to 2 then it should return False
 #       otherwise return "popped a wheelie!"
 
+class Motorcycle(Vehicle):
+    def __init__(self, wheel_count, name):
+        self.vehicle_type = vehicle_type
+        self.wheel_count = wheel_count
+        self.name = name
+        self.mpg = (city, highway, combined)
 
+    def pop_wheelie(self):
+        if self.wheel_count != 2:
+            print(False)
+        else:
+            print("popped a wheelie!")
 
 # #3: Define a Car class that inherits from the Vehicle class with the following properties and methods:
 # - all the properties inherited from the Vehicle class
