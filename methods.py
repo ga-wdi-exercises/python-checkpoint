@@ -3,6 +3,12 @@
 
 # #1: Create a method called num_list_with_arg that takes a positive integer and
 # returns a list of integers between 1 and the number passed in.
+
+
+def num_list_with_arg(num):
+    for integers in num:
+        return integers(range(1, num))
+
 #
 # So if the number 5 is passed in, num_list_with_arg should return [1, 2, 3, 4]
 
@@ -50,6 +56,8 @@ def has_ruby_exp():
         }
     }
 
+    if experience['ruby'] == True:
+        ruby_experience = ruby_experience.append(experience)
 
 
 # #3: Create a method called toggle_str_num that takes an argument. If the
@@ -58,6 +66,15 @@ def has_ruby_exp():
 # argument is neither a string nor an integer, return the string "this is not a
 # str or a int":
 
+def toggle_str_num(argument):
+    if argument(type(str)):
+        integer = int(argument)
+        return integer
+    elif argument(type(int)):
+        string = str(argument)
+        return string
+    else:
+        return print("this is not a str or a int")
 
 
 # Commit when you finish working on these questions!
