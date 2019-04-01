@@ -3,6 +3,12 @@
 
 # #1: Create a method called num_list_with_arg that takes a positive integer and
 # returns a list of integers between 1 and the number passed in.
+
+
+def num_list_with_arg():
+    return []
+
+
 #
 # So if the number 5 is passed in, num_list_with_arg should return [1, 2, 3, 4]
 
@@ -13,7 +19,11 @@
 # make sure you name the list ruby_experience before returning it.
 
 def has_ruby_exp():
+
     ruby_experience = []
+
+    def has_ruby_exp():
+        return experience.sort("ruby" == True)
 
     experience = {
         'jimmy': {
@@ -51,13 +61,11 @@ def has_ruby_exp():
     }
 
 
-
 # #3: Create a method called toggle_str_num that takes an argument. If the
 # argument is a string, convert it to an integer and return the integer; If the
 # argument is an integer, convert it to a string and return the string; If the
 # argument is neither a string nor an integer, return the string "this is not a
 # str or a int":
-
 
 
 # Commit when you finish working on these questions!
