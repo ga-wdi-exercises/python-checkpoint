@@ -61,9 +61,9 @@ def has_ruby_exp():
         }
     }
 
-    for people in experience:
-        if 'ruby' in people:
-            print("!")
+    for person in experience:
+        for key in person.keys():
+            print(key)
 
     return ruby_experience
 
@@ -75,14 +75,14 @@ def has_ruby_exp():
 
 
 def toggle_str_num(input):
-    if isinstance(input, str) and int(input):
-        print("return int")
+    if isinstance(input, str):
+        print("Input was a string: " + isinstance(input, str))
         return int(input)
-    elif isinstance(input, int) and str(input):
-        print("return string")
+    elif isinstance(input, int):
+        #print("Input was an int: " + isinstance(input, int))
         return str(input)
     else:
-        print("neither")
+        # elif !isinstance(input, int) and !isinstance(input, str):
         return "this is not a str or a int"
 
 # Commit when you finish working on these questions!
