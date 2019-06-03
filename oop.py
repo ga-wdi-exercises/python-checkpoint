@@ -28,9 +28,9 @@
 # }
 
 class Vehicle:
-    # def __init__(self, vehicle_type, wheel_count, name, mpg):
-    def __init__(self, d)
-        self.__dict__ = d
+    def __init__(self, vehicle_type, wheel_count, name, mpg):
+    # def __init__(self, d)
+    #     self.__dict__ = d
         self.vehicle_type = vehicle_type
         self.wheel_count = wheel_count
         self.name = name
