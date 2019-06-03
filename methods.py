@@ -62,7 +62,6 @@ def has_ruby_exp():
         }
 
     }
-    print(experience['jimmy']['ruby'])
     for teach in experience:
         if(experience[teach]['ruby']):
             ruby_experience.append(teach)
@@ -80,15 +79,13 @@ has_ruby_exp()
 def toggle_strt_num(value):
     int_num = []
     str_num = []
-    if value == str:
-        int_num.append(value.int())
-        return int_num
-    elif value == int:
-        str_num.append(value.str())
+    if isinstance(value, int):
+        str_num.append(str(value))
         return str_num
-    else:
-        return 'this is not a str or an int'
+    elif isinstance(value, str):
+        int_num.append(int(value))
+        return int_num
 
 
-print(toggle_strt_num(5))
+print(toggle_strt_num('3'))
 # Commit when you finish working on these questions!
