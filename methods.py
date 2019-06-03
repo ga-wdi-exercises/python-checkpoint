@@ -3,8 +3,16 @@
 
 # #1: Create a method called num_list_with_arg that takes a positive integer and
 # returns a list of integers between 1 and the number passed in.
+
+
+def num_list(number):
+    the_list = range(1, number+1)
+    return(list(the_list))
 #
 # So if the number 5 is passed in, num_list_with_arg should return [1, 2, 3, 4]
+
+
+num_list(4)
 
 
 # #2: Modify the has_ruby_exp method below so that it returns a SORTED list of
@@ -48,8 +56,12 @@ def has_ruby_exp():
             'biking': True,
             'pasta': False
         }
-    }
 
+    }
+    for teacher in experience:
+        if teacher['ruby'] == True:
+            ruby_experience.append(teacher)
+            return ruby_experience
 
 
 # #3: Create a method called toggle_str_num that takes an argument. If the
@@ -58,6 +70,14 @@ def has_ruby_exp():
 # argument is neither a string nor an integer, return the string "this is not a
 # str or a int":
 
-
+def toggle_str_num(argument):
+    if type(argument) == str:
+        integer = int(argument)
+        return(integer)
+    elif type(argument) == int:
+        string = str(argument)
+        return(string)
+    else:
+        return('this is not a str or a int')
 
 # Commit when you finish working on these questions!
