@@ -55,10 +55,11 @@ def has_ruby_exp():
         }
     }
     for instructor in experience:
-        print(instructor['ruby'])
-    #     if instructor['ruby'] == True:
-    #         ruby_experience.append(instructor)
-    # print(ruby_experience)
+        if experience[instructor]['ruby'] == True:
+            ruby_experience.append(instructor)
+    print(sorted(ruby_experience))
+    return sorted(ruby_experience)
+
 has_ruby_exp()
 
 
