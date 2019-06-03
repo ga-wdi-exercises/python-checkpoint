@@ -46,7 +46,7 @@ class Vehicle:
         if self.wheel_count == 'no wheels!':
             return "no wheels send it back to the shop"
         else:
-            return "I have {self.wheel_count} wheel drive"
+            return f"I have {str(self.wheel_count)} wheel drive"
 # #2: Create a Motorcycle class that inherits from the Vehicle class and has the
 # following properties and methods:
 # - all the properties inherited from the Vehicle class
@@ -54,15 +54,39 @@ class Vehicle:
 #       otherwise return "popped a wheelie!"
 
 
+class Motorcycle(Vehicle):
+    def __int__(self, vehicle_type, wheel_count, name):
+        super().__int__(vehicle_type, wheel_count, name)
+
+    def pop_wheelie(self):
+        if self.wheel_count != 2:
+            return False
+        else:
+            return 'popped a a wheelie!'
+
 # #3: Define a Car class that inherits from the Vehicle class with the following properties and methods:
 # - all the properties inherited from the Vehicle class
 # - property: `wheel_count` defaults to 4
 # - method: `can_drive` that should return 'Vrrooooom Vroooom'
 
 
+class Car(Vehicle):
+    def __init__(self, wheel_count, name, vehicle_type=4):
+        super().__init__(wheel_count, name, vehicle_type=4)
+
+    def can_drive(super):
+        return 'vroom vroom'
+
+
 # #4: Define a Truck class that inherits from the Vehicle class with the following properties and methods:
 # - all the properties inherited from the Vehicle class
 # - method: `rev_engine` that should return a string 'rreevv!'
 
+class Truck(Vehicle):
+    def __int__(self, vehicle_type, wheel_count, name):
+        super().__int__(vehicle_type, wheel_count, name)
+
+    def rev_engine(super):
+        return 'rreevv'
 
 # Commit when you finish working on these questions!
