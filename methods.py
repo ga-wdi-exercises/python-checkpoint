@@ -5,8 +5,15 @@
 # returns a list of integers between 1 and the number passed in.
 #
 # So if the number 5 is passed in, num_list_with_arg should return [1, 2, 3, 4]
-
-
+class x:
+    def num_list_with_arg (number):
+        if type(number) == int:
+            print(number)
+            num_array = []
+        
+        # for (x=number-1; x > 0; x--)  ...then push num to num_array
+        # have no idea how to do this in python.
+x.num_list_with_arg(5)
 # #2: Modify the has_ruby_exp method below so that it returns a SORTED list of
 # all instructors who have Ruby experience (i.e. where "ruby" == True)
 # The list should contain only names of instructors.
