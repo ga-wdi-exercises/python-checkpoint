@@ -27,6 +27,24 @@
 #     "name": "Unidentified Flying Object",
 # }
 
+ class vehicle_dict_vehicle = {
+     "vehicle_type": "Vehicle",
+     "wheel_count": 'no wheels!',
+     "mpg": {
+         "city": 19,
+         "highway": 30,
+         "combined": 27
+     },
+     "name": "Unidentified Flying Object",
+ }
+
+ def get_vehicle_type():
+     return vehicle_dict_vehicle.vehicle_type
+     print(vehicle_dict_vehicle.vehicle_type)
+
+def get_vehicle_drive():
+    if vehicle_dict_vehicle.wheel_count=='no wheels!'
+        print("no wheels send it back to the shop")
 
 
 # #2: Create a Motorcycle class that inherits from the Vehicle class and has the
