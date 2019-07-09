@@ -25,7 +25,22 @@
 #     },
 #     "name": "Unidentified Flying Object",
 # }
+""" 
+The example says mpg and mgg not mpg and city. I'm just confused on what the whole thing is asking for. 
 
+ Here's an example of the dict that will be passed in to your class:
+vehicle_dict_vehicle = {
+    "vehicle_type": "Vehicle",
+    "wheel_count": 'no wheels!',
+    "mpg": {
+        "mpg": 19,
+        "highway": 30,
+        "combined": 27
+    },
+    "name": "Unidentified Flying Object",
+} 
+
+"""
 class Vehicle:
     def __init__(self, wheel_count, city, highway, combined, name, vehicle_dict_vehicle, vehicle_type):
         self.vehicle_dict_vehicle = {
