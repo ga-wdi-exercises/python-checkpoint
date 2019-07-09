@@ -71,11 +71,11 @@ def has_ruby_exp():
 # str or a int":
 
 def toggle_str_num(x):
-    if isinstance(x, str):
-        x = int(x)
-        return x
-    elif isinstance(x, int):
+    if isinstance(x, int):
         x = str(x)
+        return x
+    elif isinstance(x, str):
+        x = int(x)
         return x
     else: 
         print("this is not a str or a int")

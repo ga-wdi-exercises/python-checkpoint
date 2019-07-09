@@ -26,21 +26,24 @@
 #     "name": "Unidentified Flying Object",
 # }
 
-class Vehicle ():
-    def __init__(self, vehicle_type, wheel_count, city, highway,combined, name):
-        self.vehicle_type = vehicle_type
-        self.wheel_count = wheel_count
-        mpg = {
-            self.city : city,
-            self.highway : highway,
-            self.combined : combined,
-        }
-        self.name = name
-        return super().__init__(*args, **kwargs)
+class Vehicle:
+    def __init__(self, wheel_count, city, highway, combined, name, vehicle_dict_vehicle, vehicle_type):
+        self.vehicle_dict_vehicle = {
+            self.vehicle_type: vehicle_type,
+            self.wheel_count: wheel_count,
+            self.name: name,
+            self.mpg : {
+                self.city : city,
+                self.highway : highway,
+                self.combined : combined,
+            },
+}
+
     def __str__(self):
         return self
-    def get_vehicle_type(self):
-        return self.vehicle_type
+    # def get_vehicle_type(self):
+        # return self.vehicle_dict_vehicle.vehicle_type
+
     def get_vehicle_drive(self):
         # - `get_vehicle_drive` if the `wheel_count` for that class is "no wheels!" then
 #     it should return "no wheels send it back to the shop"
