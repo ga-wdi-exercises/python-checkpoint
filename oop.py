@@ -28,6 +28,10 @@
 # }
 
 
+class Vehicle:
+    def__init__(self, name):
+    self.name = name
+
 
 # #2: Create a Motorcycle class that inherits from the Vehicle class and has the
 # following properties and methods:
