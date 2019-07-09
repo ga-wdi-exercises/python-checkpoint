@@ -7,12 +7,15 @@
 
 def num_list_with_arg(x):
     i = 0
-    for i in range(x):
-        print(i + 1)
+    nums = []
+    for i in range(x - 1):
+        if i > 0:
+            nums.append(i + 1)
+    print(nums)
 
 
 # So if the number 5 is passed in, num_list_with_arg should return [1, 2, 3, 4]
-print(num_list_with_arg(5))
+num_list_with_arg(10)
 
 
 # #2: Modify the has_ruby_exp method below so that it returns a SORTED list of
@@ -57,7 +60,13 @@ def has_ruby_exp():
             'pasta': False
         }
     }
+    for teacher in experience:
+        if experience[teacher]['ruby'] == True:
+            ruby_experience.append(teacher)
+    print(ruby_experience)
 
+
+has_ruby_exp()
 
 # #3: Create a method called toggle_str_num that takes an argument. If the
 # argument is a string, convert it to an integer and return the integer; If the
@@ -65,5 +74,20 @@ def has_ruby_exp():
 # argument is neither a string nor an integer, return the string "this is not a
 # str or a int":
 
+
+def toggle_str_num(x):
+    if type(x) is not int and type(x) is not str:
+        print("this is not a str or a int")
+    elif type(x) is str:
+        print("its a string")
+        int_str = int(x)
+        print(int_str)
+    elif type(x) is int:
+        print("its an int")
+        str_int = str(x)
+        print(str_int)
+
+
+toggle_str_num(z)
 
 # Commit when you finish working on these questions!
