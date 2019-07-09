@@ -88,6 +88,6 @@ def toggle_str_num(x):
         print(str_int)
 
 
-toggle_str_num(z)
+toggle_str_num("18")
 
 # Commit when you finish working on these questions!
