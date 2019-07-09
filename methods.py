@@ -3,7 +3,7 @@
 
 # #1: Create a method called num_list_with_arg that takes a positive integer and
 # returns a list of integers between 1 and the number passed in.
-def num_list(number):
+def num_list_with_arg(number):
     if number < 1:
         return False
     else:
