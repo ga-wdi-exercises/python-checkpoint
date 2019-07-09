@@ -3,6 +3,9 @@
 
 # #1: Create a method called num_list_with_arg that takes a positive integer and
 # returns a list of integers between 1 and the number passed in.
+def num_list_with_arg(num):
+    return list(range(1,num))
+
 #
 # So if the number 5 is passed in, num_list_with_arg should return [1, 2, 3, 4]
 
@@ -49,6 +52,10 @@ def has_ruby_exp():
             'pasta': False
         }
     }
+    for k in experience:
+        if k.ruby == True:
+            ruby_experience.append(key)
+    return ruby_experience.sort()        
 
 
 
@@ -58,6 +65,14 @@ def has_ruby_exp():
 # argument is neither a string nor an integer, return the string "this is not a
 # str or a int":
 
-
+def toggle_str_num(data):
+    newData = 0
+    if (type(data) is str):
+        newData = int(data)
+    if (type(data) is int):
+        newData = str(data)
+    else:
+        newData = "this is not a str or a int"
+    return newData
 
 # Commit when you finish working on these questions!
