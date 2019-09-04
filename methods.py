@@ -6,6 +6,10 @@
 #
 # So if the number 5 is passed in, num_list_with_arg should return [1, 2, 3, 4]
 
+def num_list_with_arg():
+    list(range(1, 10))
+    
+
 
 # #2: Modify the has_ruby_exp method below so that it returns a SORTED list of
 # all instructors who have Ruby experience (i.e. where "ruby" == True)
@@ -14,6 +18,16 @@
 
 def has_ruby_exp():
     ruby_experience = []
+    if experience["jimmy"]["ruby"] == True
+        ruby_experience.append("jimmy")
+    if experience["don"]["ruby"] == True
+        ruby_experience.append("don")
+    if experience["zakk"]["ruby"] == True
+        ruby_experience.append("zakk")
+    if experience["hector"]["ruby"] == True
+        ruby_experience.append("hector")
+    else return False          
+          
 
     experience = {
         'jimmy': {
