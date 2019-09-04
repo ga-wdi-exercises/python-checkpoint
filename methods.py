@@ -5,7 +5,11 @@
 # returns a list of integers between 1 and the number passed in.
 #
 # So if the number 5 is passed in, num_list_with_arg should return [1, 2, 3, 4]
-
+def num_list_with_arg(int):
+    if int < 1:
+        return False
+    else:
+        return int > 1
 
 # #2: Modify the has_ruby_exp method below so that it returns a SORTED list of
 # all instructors who have Ruby experience (i.e. where "ruby" == True)
@@ -57,6 +61,13 @@ def has_ruby_exp():
 # argument is an integer, convert it to a string and return the string; If the
 # argument is neither a string nor an integer, return the string "this is not a
 # str or a int":
+def toggle_str_num(arg):
+    if arg == str:
+        return arg == int  
+    elif arg == int:
+        return arg == str
+    else:
+        return "this is not a str or a int"
 
 
 
