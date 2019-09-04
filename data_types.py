@@ -5,12 +5,11 @@
 #     - "windows_count" -> data_type: int, value: 8
 #     - "glare" -> data_type: boolean, value: True
 
-def test_dictionary_classroom():
-    dictionary_classroom = {
-        "chairs": 35,
-        "namer": "CR3",
-        "windows_count" : 8,
-        "glare" : True
+dictionary_classroom = {
+    "chairs": 35,
+    "namer": "CR3",
+    "windows_count" : 8,
+    "glare" : True
 
     }
 
