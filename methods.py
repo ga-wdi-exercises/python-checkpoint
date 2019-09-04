@@ -68,6 +68,8 @@ def has_ruby_exp():
 # str or a int":
 
 def toggle_str_num(arg):
+    if arg.data_type == String:
+        
     return arg
     
 

@@ -27,6 +27,8 @@
 #     "name": "Unidentified Flying Object",
 # }
 
+class Vehicle:
+    vehicle_type: 
 
 
 # #2: Create a Motorcycle class that inherits from the Vehicle class and has the
