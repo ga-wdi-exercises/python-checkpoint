@@ -26,7 +26,21 @@
 #     },
 #     "name": "Unidentified Flying Object",
 # }
-
+class vehicle_properties():
+    vehicle_information= {
+        "vehicle_type": "sedan",
+        "wheel_count": "4",
+         "name": "",
+        "mpg": {
+        "city": 22,
+        "highway":44,
+        "combined": 30
+        }
+    }
+    
+    
+    def get_vehicle_type():
+        return 
 
 
 # #2: Create a Motorcycle class that inherits from the Vehicle class and has the
