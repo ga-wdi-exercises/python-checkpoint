@@ -3,10 +3,26 @@
 
 # #1: Create a method called num_list_with_arg that takes a positive integer and
 # returns a list of integers between 1 and the number passed in.
-#
+
+
+
+def num_list_with_arg(input):
+    output = []
+    compare = 1
+    while compare < input:
+        print(output)
+        output.append(compare)
+        compare += 1
+    return output
+
+# num_list_with_arg(6)
+
+
 # So if the number 5 is passed in, num_list_with_arg should return [1, 2, 3, 4]
 
 
+
+#
 # #2: Modify the has_ruby_exp method below so that it returns a SORTED list of
 # all instructors who have Ruby experience (i.e. where "ruby" == True)
 # The list should contain only names of instructors.
@@ -59,5 +75,20 @@ def has_ruby_exp():
 # str or a int":
 
 
+def toggle_str_num(arg):
+    if isinstance(arg, int):
+        output = str(arg)
+        return output
+    else: 
+        if isinstance(arg, str):
+            output = int(arg)
+            return output
+        else:
+            return "this is not a str or a int"
+
+
+   
+
+# toggle_str_num(2)
 
 # Commit when you finish working on these questions!
