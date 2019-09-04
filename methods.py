@@ -69,5 +69,19 @@ def has_ruby_exp():
 # str or a int":
 
 
+def toggle_str_num(value):
+  if(isinstance(value,int) == True):
+    return(print(str(value)),str(value))
+  elif(isinstance(value,str)== True):
+    return(print(int(value)),int(value))
+  else:
+    return print("this is not a str or a int")
+
+  
+
+
+
+
+
 
 # Commit when you finish working on these questions!
