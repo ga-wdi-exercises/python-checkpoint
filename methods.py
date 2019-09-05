@@ -3,6 +3,10 @@
 
 # #1: Create a method called num_list_with_arg that takes a positive integer and
 # returns a list of integers between 1 and the number passed in.
+
+def num_list_with_arg():
+    number = 4
+    list (range((1,4)))
 #
 # So if the number 5 is passed in, num_list_with_arg should return [1, 2, 3, 4]
 
@@ -50,6 +54,7 @@ def has_ruby_exp():
         }
     }
 
+    ruby_experience.insert(experience['jimmy','zakk']['ruby'])
 
 
 # #3: Create a method called toggle_str_num that takes an argument. If the

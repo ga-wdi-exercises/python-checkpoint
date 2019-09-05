@@ -25,6 +25,9 @@
 #         "combined": 27
 #     },
 #     "name": "Unidentified Flying Object",
+
+class Vehicle :
+    def __init__(self, )
 # }
 
 
@@ -41,6 +44,9 @@
 # - all the properties inherited from the Vehicle class
 # - property: `wheel_count` defaults to 4
 # - method: `can_drive` that should return 'Vrrooooom Vroooom'
+
+class Car():
+    def __init__(self, )
 
 
 # #4: Define a Truck class that inherits from the Vehicle class with the following properties and methods:
