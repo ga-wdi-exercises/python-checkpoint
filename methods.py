@@ -54,7 +54,7 @@ def has_ruby_exp():
         }
     }
 
-    ruby_experience = experience{['jimmy','zakk']['ruby']}
+    ruby_experience.insert(experience['jimmy','zakk']['ruby'])
 
 
 # #3: Create a method called toggle_str_num that takes an argument. If the
