@@ -3,7 +3,15 @@
 
 # #1: Create a method called num_list_with_arg that takes a positive integer and
 # returns a list of integers between 1 and the number passed in.
-#
+
+def num_list_with_arg(int):
+    num = 1
+    numlist = []
+    while num < int:
+        numlist.append(num)
+        num + 1
+    return numlist
+
 # So if the number 5 is passed in, num_list_with_arg should return [1, 2, 3, 4]
 
 
