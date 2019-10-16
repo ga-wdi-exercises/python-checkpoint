@@ -5,6 +5,19 @@
 # returns a list of integers between 1 and the number passed in.
 #
 # So if the number 5 is passed in, num_list_with_arg should return [1, 2, 3, 4]
+def num_list_with_arg(num):
+    notdone = True
+    count = 1
+    numlist = []
+    while notdone:
+        if(count == num):
+            notdone = False
+        else:
+            numlist.append(count)
+            count = count + 1
+    return numlist
+
+
 
 
 # #2: Modify the has_ruby_exp method below so that it returns a SORTED list of
@@ -49,6 +62,20 @@ def has_ruby_exp():
             'pasta': False
         }
     }
+    for val in experience:
+        for key,value in val.items():
+            if(key == 'ruby' and value == True):
+                name = val.__name__
+                ruby_experience.append(name)
+    
+    
+    ruby_experience.sort()
+    return ruby_experience
+
+
+
+    
+
 
 
 
