@@ -13,6 +13,7 @@ pluggy = "*"
 py = "*"
 pytest = "*"
 six = "*"
+django = "*"
 
 [requires]
 python_version = "*"
