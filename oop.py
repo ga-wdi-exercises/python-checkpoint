@@ -26,6 +26,21 @@
 #     },
 #     "name": "Unidentified Flying Object",
 # }
+class Vehicle:
+    def __init__(self):
+        self.vehicle_type = vehicle_type
+        self.wheel_count = wheel_count
+        self.name = name
+        self.mpg = mpg.copy()
+    
+    def get_vehicle_type(self):
+        print(self.vehicle_type)
+
+    def get_vehicle_drive(self):
+        if self.wheel_count == 'no wheels!':
+            print('no wheels send it back to the shop')
+        else:
+            print(f'I have {self.wheel_count} wheel drive')
 
 
 
