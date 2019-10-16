@@ -27,6 +27,27 @@
 #     "name": "Unidentified Flying Object",
 # }
 
+class Vehicle:
+    def __init__(self, vehicle_type, wheel_count, mpg, name, dict):
+        self.vehicle_type = vehicle_type
+        self.wheel_count = wheel_count
+        self.mpg = {
+            "city": int,
+            "highway": int,
+            "combined": int
+        }
+        self.name = name,
+        self.dict = vars(Vehicle)
+
+        def get_vehicle_type(self, vehicle_type):
+            print(vehicle_type)
+        
+        def get_vehicle_drive(self, wheel_count):
+            if (wheel_count == "no wheels!"):
+                print("no wheels send it back to the shop")
+            else:
+                print(f"I have {self.wheel_count} wheel drive")
+
 
 
 # #2: Create a Motorcycle class that inherits from the Vehicle class and has the
@@ -35,12 +56,44 @@
 # - method: `pop_wheelie` if `wheel_count` is not equal to 2 then it should return False
 #       otherwise return "popped a wheelie!"
 
+class Motorcycle(Vehicle):
+    def __init__(self, vehicle_type, wheel_count, mpg, name):
+        super().__init__(vehicle_type, wheel_count, mpg, name)
+        self.vehicle_type = vehicle_type
+        self.wheel_count = wheel_count
+        self.mpg = {
+            "city": int,
+            "highway": int,
+            "combined": int
+        }
+        self.name = name
+
+        def pop_wheelie(self, wheel_count):
+            if (wheel_count != 2):
+                return False
+            else: 
+                print("popped a wheelie!")
+
 
 
 # #3: Define a Car class that inherits from the Vehicle class with the following properties and methods:
 # - all the properties inherited from the Vehicle class
 # - property: `wheel_count` defaults to 4
 # - method: `can_drive` that should return 'Vrrooooom Vroooom'
+
+class Car(Vehicle):
+    def __init(self):
+        super().__init__(vehicle_type, wheel_count, mpg, name)
+        self.vehicle_type = vehicle_type
+        self.wheel_count = wheel_count
+        self.mpg = {
+            "city": int,
+            "highway": int,
+            "combined": int
+        }
+        self.name = name
+
+        
 
 
 # #4: Define a Truck class that inherits from the Vehicle class with the following properties and methods:
