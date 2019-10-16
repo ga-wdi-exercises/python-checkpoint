@@ -26,7 +26,20 @@
 #     },
 #     "name": "Unidentified Flying Object",
 # }
+class Vehicle:
+    "vehicle_type" = ""
+    "wheel_count" = ""
+    "name" = ""
+    "mpg" {
+        "city": "",
+        "highway": "",
+        "combined": ""
+    }
+    def description(self):
+        desc_str = (self.vehicle_type, self.wheel_count, self.name, self.mpg)
+        return desc_str
 
+print(vehicle.description())
 
 
 # #2: Create a Motorcycle class that inherits from the Vehicle class and has the
@@ -34,6 +47,9 @@
 # - all the properties inherited from the Vehicle class
 # - method: `pop_wheelie` if `wheel_count` is not equal to 2 then it should return False
 #       otherwise return "popped a wheelie!"
+class Motorcycle(Vehicle):
+    def __init__(self):
+        Vehicle.__init__(self)
 
 
 
@@ -41,7 +57,8 @@
 # - all the properties inherited from the Vehicle class
 # - property: `wheel_count` defaults to 4
 # - method: `can_drive` that should return 'Vrrooooom Vroooom'
-
+class Car(Vehicle):
+    def __init__(self):
 
 # #4: Define a Truck class that inherits from the Vehicle class with the following properties and methods:
 # - all the properties inherited from the Vehicle class
