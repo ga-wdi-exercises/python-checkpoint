@@ -74,7 +74,7 @@ class Motorcycle(Vehicle):
 
 class Car(Vehicle):
     def __init__(self): 
-        super().__init__()
+        
 
         self.wheel_count = 4
 
@@ -88,9 +88,9 @@ class Car(Vehicle):
 
 class Truck(Vehicle): 
     def __init__(self): 
-        super().__init__()
 
-    def rev_engine(): 
-        return "rreevv!"
+            
+        def rev_engine(self): 
+            return "rreevv!"
 
 # Commit when you finish working on these questions!
