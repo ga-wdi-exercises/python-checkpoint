@@ -27,6 +27,33 @@
 #     "name": "Unidentified Flying Object",
 # }
 
+class Vehicle:
+    def __init__(self, item):
+        self.item = {
+            self.vehicle_type: vehicle_type,
+            "wheel_count": wheel_count,
+            "mpg": {
+                "city": city,
+                "highway": highway,
+                "combined": combined
+            },
+            "name": name
+        }
+    # vehicle_type, wheel_count, mpg = {"city": city, "highway": highway, "combined": combined}, name):
+        self.vehicle_type = vehicle_type
+        self.wheel_count = wheel_count
+        self.mpg = mpg
+        self.name = name
+
+    def get_vehicle_type(self):
+        return self.get_vehicle_type
+
+    def get_vehicle_drive(self):
+        if(self.wheel_count == 0):
+            return print("No wheels send it back to the shop")
+        else:
+            return print(f'I have {self.wheel_count} wheel drive')
+
 
 
 # #2: Create a Motorcycle class that inherits from the Vehicle class and has the
